@@ -1,0 +1,1167 @@
+﻿@using FinalArizon.ViewModel;
+@model List<Category>
+@{
+    double Count;
+}
+<main>
+    <div class="container">
+        <section id="section1">
+            <div class="row m-0">
+                <div class="col-md-3 d-none d-md-block p-0 m-0 pe-2">
+                    <div class="catalog pt-3 ps-2 pe-0">
+                        <p class="catalog_p fw-bold me-2">
+                            <img src="frontend/image/catalog.png">
+                            Kataloq
+                        </p>
+                        <nav class="nav flex-column m-0">
+                            <ul class="py-3 home-catalog">
+                                <li class="nav-item pt-1">
+                                    <a class="nav-link p-0 m-0 pe-4" href="az/category/mega-endirimler.html">
+                                        <img class="p-2" src="storage/photos/1/logo/x1.png" width="35px" height="35px">
+                                        Mega endirimlər
+                                    </a>
+                                </li>
+                                <li class="nav-item pt-1">
+                                    <a class="nav-link p-0 m-0 pe-4" href="az/category/meishet-texnikasi.html">
+                                        <img class="p-2" src="storage/photos/1/logo/20801021.png" width="35px" height="35px">
+                                        Məişət texnikası <i class="fa fa-chevron-right ms-auto"></i>
+                                    </a>
+                                    <ul class="chld-container p-2">
+                                        <li class="chld-item"><a href="az/category/meishet-texnikasi.html">Məişət Texnikası</a></li>
+                                        <li class="chld-item"><a href="az/category/kichik-meishet-texnikasi.html">Kiçik məişət texnikası</a></li>
+                                        <li class="chld-item"><a href="az/category/buxarli-utu.html">Buxarlı ütü</a></li>
+                                        <li class="chld-item"><a href="az/category/friturlar.html">Fritürlar</a></li>
+                                        <li class="chld-item"><a href="az/category/tosterler.html">Tosterlər</a></li>
+                                        <li class="chld-item"><a href="az/category/elektikli-chaydan.html">Elektikli çaydan</a></li>
+                                        <li class="chld-item"><a href="az/category/etchekenler.html">Ətçəkənlər</a></li>
+                                        <li class="chld-item"><a href="az/category/tozsoranlar.html">Tozsoranlar</a></li>
+                                        <li class="chld-item"><a href="az/category/blenderler.html">Blenderlər</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pt-1">
+                                    <a class="nav-link p-0 m-0 pe-4" href="az/category/elektronika.html">
+                                        <img class="p-2" src="storage/photos/1/logo/34617861.png" width="35px" height="35px">
+                                        Elektronika <i class="fa fa-chevron-right ms-auto"></i>
+                                    </a>
+                                    <ul class="chld-container p-2">
+                                        <li class="chld-item"><a href="az/category/uzqirxanlar-trimmerler.html">Üzqırxanlar &amp; Trimmerlər</a></li>
+                                        <li class="chld-item"><a href="az/category/fenler.html">Fenlər</a></li>
+                                        <li class="chld-item"><a href="az/category/telefonlar.html">Telefonlar</a></li>
+                                        <li class="chld-item"><a href="az/category/epilyator.html">Epilyator</a></li>
+                                        <li class="chld-item"><a href="az/category/masaj-aparati.html">Masaj Aparatı</a></li>
+                                        <li class="chld-item"><a href="az/category/ventilyator.html">Ventilyator</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pt-1">
+                                    <a class="nav-link p-0 m-0 pe-4" href="az/category/gozellik-saglamliq.html">
+                                        <img class="p-2" src="storage/photos/1/logo/33787221.png" width="35px" height="35px">
+                                        Gözəllik &amp; Sağlamlıq <i class="fa fa-chevron-right ms-auto"></i>
+                                    </a>
+                                    <ul class="chld-container p-2">
+                                        <li class="chld-item"><a href="az/category/etirler.html">Ətirlər</a></li>
+                                        <li class="chld-item"><a href="az/category/canta.html">Çanta</a></li>
+                                        <li class="chld-item"><a href="az/category/masaj-aparati.html">Masaj Aparatı</a></li>
+                                        <li class="chld-item"><a href="az/category/korsetler.html">Korsetlər</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pt-1">
+                                    <a class="nav-link p-0 m-0 pe-4" href="az/category/ev-yasam.html">
+                                        <img class="p-2" src="storage/photos/1/logo/357-3573696_home-sweet-home-1home-garden-icon.png" width="35px" height="35px">
+                                        Ev &amp; Yaşam <i class="fa fa-chevron-right ms-auto"></i>
+                                    </a>
+                                    <ul class="chld-container p-2">
+                                        <li class="chld-item"><a href="az/category/ev-yasam.html">Ev &amp; Yaşam</a></li>
+                                        <li class="chld-item"><a href="az/category/temizlik-aletleri.html">Təmizlik Alətləri</a></li>
+                                        <li class="chld-item"><a href="az/category/metbex-avadanliqlari.html">Mətbəx Avadanlıqları</a></li>
+                                        <li class="chld-item"><a href="az/category/soba-qizdiricilar.html">Soba &amp; Qızdırıcılar</a></li>
+                                        <li class="chld-item"><a href="az/category/hamam-aksesuarlari.html">Hamam Aksesuarları</a></li>
+                                        <li class="chld-item"><a href="az/category/ev-dekorasiya.html">Ev Dekorasiya</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pt-1">
+                                    <a class="nav-link p-0 m-0 pe-4" href="az/category/oyun-eylence.html">
+                                        <img class="p-2" src="storage/photos/1/logo/40216311.png" width="35px" height="35px">
+                                        Oyun &amp; Əyləncə <i class="fa fa-chevron-right ms-auto"></i>
+                                    </a>
+                                    <ul class="chld-container p-2">
+                                        <li class="chld-item"><a href="az/category/sahmat.html">Şahmat</a></li>
+                                        <li class="chld-item"><a href="az/category/dart.html">Dart</a></li>
+                                        <li class="chld-item"><a href="az/category/lego.html">Lego</a></li>
+                                        <li class="chld-item"><a href="az/category/okey-seti.html">Okey Seti</a></li>
+                                        <li class="chld-item"><a href="az/category/masaustu-oyunlar.html">Masaüstü Oyunlar</a></li>
+                                        <li class="chld-item"><a href="az/category/oyuncaqlar.html">Oyuncaqlar</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pt-1">
+                                    <a class="nav-link p-0 m-0 pe-4" href="az/category/fitness.html">
+                                        <img class="p-2" src="storage/photos/1/logo/4781628-2001.png" width="35px" height="35px">
+                                        Fitnes avadanlığı <i class="fa fa-chevron-right ms-auto"></i>
+                                    </a>
+                                    <ul class="chld-container p-2">
+                                        <li class="chld-item"><a href="az/category/fitness.html">Fitness</a></li>
+                                        <li class="chld-item"><a href="az/category/velo-trenajor-qachish-aparati.html">Velo Trenajor &amp; Qaçış Aparatı</a></li>
+                                        <li class="chld-item"><a href="az/category/meshq-aletleri.html">Məşq Alətləri</a></li>
+                                        <li class="chld-item"><a href="az/category/muqavimet-bandi.html">Müqavimət Bandı</a></li>
+                                        <li class="chld-item"><a href="az/category/atlama-ipi.html">Atlama İpi</a></li>
+                                        <li class="chld-item"><a href="az/category/idman-elceyi.html">İdman Əlcəyi</a></li>
+                                        <li class="chld-item"><a href="az/category/qantel.html">Qantel</a></li>
+                                        <li class="chld-item"><a href="az/category/fitnes-aksesuarlari.html">Fitnes Aksesuarları</a></li>
+                                        <li class="chld-item"><a href="az/category/velosiped.html">Velosiped</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pt-1">
+                                    <a class="nav-link p-0 m-0 pe-4" href="az/category/sport.html">
+                                        <img class="p-2" src="storage/photos/1/logo/53887311.png" width="35px" height="35px">
+                                        Sport <i class="fa fa-chevron-right ms-auto"></i>
+                                    </a>
+                                    <ul class="chld-container p-2">
+                                        <li class="chld-item"><a href="az/category/sport.html">Sport</a></li>
+                                        <li class="chld-item"><a href="az/category/futbol-topu.html">Futbol Topu</a></li>
+                                        <li class="chld-item"><a href="az/category/futbol-avadanliqlari.html">Futbol Avadanlıqları</a></li>
+                                        <li class="chld-item"><a href="az/category/basketbol.html">Basketbol</a></li>
+                                        <li class="chld-item"><a href="az/category/tennis.html">Tennis</a></li>
+                                        <li class="chld-item"><a href="az/category/boks-mma.html">Boks &amp; MMA</a></li>
+                                        <li class="chld-item"><a href="az/category/taekvondo-karate.html">Taekvondo &amp; Karate</a></li>
+                                        <li class="chld-item"><a href="az/category/uzguculuk.html">Üzgüçülük</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pt-1">
+                                    <a class="nav-link p-0 m-0 pe-4" href="az/category/yoga-pilates.html">
+                                        <img class="p-2" src="storage/photos/1/logo/4595498-2001.png" width="35px" height="35px">
+                                        Yoga &amp; Pilates <i class="fa fa-chevron-right ms-auto"></i>
+                                    </a>
+                                    <ul class="chld-container p-2">
+                                        <li class="chld-item"><a href="az/category/yoga-pilates.html">Yoga &amp; Pilates</a></li>
+                                        <li class="chld-item"><a href="az/category/pilates-topu.html">Pilates Topu</a></li>
+                                        <li class="chld-item"><a href="az/category/yoga-matt.html">Yoga Matt</a></li>
+                                        <li class="chld-item"><a href="az/category/masaj-topu.html">Masaj Topu</a></li>
+                                        <li class="chld-item"><a href="az/category/obruch.html">Obruch</a></li>
+                                        <li class="chld-item"><a href="az/category/atlama-ipi.html">Atlama İpi</a></li>
+                                        <li class="chld-item"><a href="az/category/masaj-silindiri.html">Masaj Silindiri</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pt-1">
+                                    <a class="nav-link p-0 m-0 pe-4" href="az/category/diger-mehsullar.html">
+                                        <img class="p-2" src="storage/photos/1/logo/423443-2001.png" width="35px" height="35px">
+                                        Digər Məhsullar
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-7 p-0 m-0 px-2">
+                    <div class="regular pt-3 px-2 pb-4 h-100">
+                        <a href="az/category/friturlar.html">
+                            <div class="main_slider_img" data-hash="one">
+                                <img class="w-100" src="storage/photos/1/slider/brilliant%20frit%c3%b6z.jpg">
+                            </div>
+                        </a>
+                        <a href="az/category/elektikli-chaydan.html" style="display: none;">
+                            <div class="main_slider_img" data-hash="one">
+                                <img class="w-100" src="storage/photos/1/slider/brilliant%20frit%c3%b6z1.jpg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 d-none d-md-block p-0 m-0 ps-1">
+                    <div class="catalog p-2 py-3 h-100">
+                        <p class="catalog_p fw-bold">
+                            Çox satılanlar
+                        </p>
+                        <div class="best">
+                            <a href="az/product/1010/avtomobil-ucun-telefon-tutacagi-coxfunksiyali-360-derece-firlanan-arxa-gorunus-guzgusu-ucun-asma-klip-avtomobil-ucun-mobil-telefon-tutacagi.html">
+                                <div class="best_item d-flex py-2">
+                                    <img width="60px" src="storage/photos/3/1%20cars/360avtomobil/Sa79baa9fd6ac47a39e202572d3e15d4bY.jpg">
+                                    <div class="text py-1 ps-1">
+                                        <h4>Avtomobil üçün telefon tutacağı çoxfunksiyalı...</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="az/product/694/5-bicaqli-terevez-dograyan-dilimeyici-ve-surtgecli-sebet-terevez-qabigi-soyan.html">
+                                <div class="best_item d-flex py-2">
+                                    <img width="60px" src="storage/photos/3/ametbex%20aletleri/dograyici/512lJdOiCZL.jpg">
+                                    <div class="text py-1 ps-1">
+                                        <h4>5 Bıçaqlı Tərəvəz Doğrayan, Diliməyici və Sür...</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="az/product/737/praktik-tuk-temizleme-fircasi-elektrostatik-yapisqan-tuk-temizleyici-epi-firca-divan-yataq-portativ-meiset-temizleme-fircasi.html">
+                                <div class="best_item d-flex py-2">
+                                    <img width="60px" src="storage/photos/3/ABBMEISET/tuktemizleye/8a328d2ebddf91edb019ba17c7fcc3fc.jpg">
+                                    <div class="text py-1 ps-1">
+                                        <h4>Praktik Tük Təmizləmə Fırçası Elektrostatik Y...</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="az/product/1004/usaqlar-ucun-termos-480ml-304-paslanmayan-polad-termos-2d-karikatur-sticker-ile-4-5-saat.html">
+                                <div class="best_item d-flex py-2">
+                                    <img width="60px" src="storage/photos/3/1%20AAA%20Fincan/termos10/bd56bc05c3f903d70ef8656ef71ce3b1.jpg">
+                                    <div class="text py-1 ps-1">
+                                        <h4>Uşaqlar üçün Termos 480ml 304 Paslanmayan Pol...</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="az/product/993/stretch-and-fresh-silikon-qida-saxlama-qablari-berk-qidalar-ucun-hava-kecirmeyen-ve-sorba-ve-souslar-ucun-sizdirmaz.html">
+                                <div class="best_item d-flex py-2">
+                                    <img width="60px" src="storage/photos/3/1%201%201%20ME%c4%b0SETALET/silikonqab/asdfghjtttt548okjo.jpg">
+                                    <div class="text py-1 ps-1">
+                                        <h4>Stretch and Fresh, Silikon qida saxlama qabla...</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            @foreach (var item in Model)
+            {
+<section id="section33" class="mt-3 mt-md-4 discount-section3">
+                
+            
+            <div class="text d-flex">
+                <div class="custom-icon-circle">
+                    <img src="frontend/image/mega-e.png" />
+                </div>
+
+                <h2>Mega <span style="color: #ff4747!important;">@item.Name</span></h2>
+                <a href="az/discount/mega.html" class="discount-link ms-auto">Daha çox</a>
+            </div>
+            <div class="regular overflow-hidden">
+                @foreach (Product product in item.Products)
+                    {
+                        <a class="discount-slider col-6 col-md-3 col-lg-2 " href="az/product/109/press-carxi-avtomatik-ribound-abdominal-power-stretch-roller-cut-tekerli.html">
+                    <div class="ds-item">
+                        <div class="img-container">
+                            <img class="img_main" src="storage/photos/1/products/@product.ImagePath">
+                            <span>@{
+                               Count=(int)(100-(@product.DiscountPrice*100/@product.Price));
+                            }
+                            @Count %
+                            
+                        </span>
+                        </div>
+                        <div class="net-price">@product.DiscountPrice <span class="icon-azn">M</span></div>
+                        <div class="discount">@product.Price <i class="icon-azn">M</i></div>
+                    </div>
+                </a>
+                
+                        
+                    }
+              
+                
+            </div>
+        </section>
+        <section id="section3" class="mt-3 mt-md-4 discount-section3">
+
+            <div class="text d-flex">
+                <div class="custom-icon-circle">
+                    <img src="frontend/image/endirim.png" />
+                </div>
+                <h2>@item.Name</h2>
+                <a href="az/discount.html" class="discount-link ms-auto">Daha çox</a>
+            </div>
+            <div class="regular overflow-hidden">
+                @foreach (Product product1 in item.Products)
+                    {
+                         <a class="discount-slider col-6 col-md-3 col-lg-2 " href="az/product/701/balans-topu-balans-telimcisi-agir-yuk-bandi-ile-23-yarim-top-4-mm-qalinliqda-pvc-ceki-660-lbs-bonus-ayaq-pompasi-ile-yoqa-ve-fitness-mesqleri.html">
+                    <div class="ds-item">
+                        <div class="img-container">
+                            <img class="img_main" src="storage/photos/3/1.1abs/balance/@product1.ImagePath">
+                                    <span>
+                                        @{
+                                            Count = (int)(100 - (@product1.DiscountPrice * 100 / @product1.Price));
+                                        }
+                                        @Count %
+                                    </span>
+                        </div>
+                        <div class="net-price">@product1.DiscountPrice<span class="icon-azn">M</span></div>
+                        <div class="discount">@product1.Price <i class="icon-azn">M</i></div>
+                    </div>
+                </a> 
+                    }
+               
+               </div>
+        </section>
+        <section id="section4">
+            <a href="#">
+                <p class="title fw-bold">Ən yaxşı seçim</p>
+            </a>
+            <div class="row m-0 pt-4">
+                <div class="col-12 col-sm-4 p-0 px-2">
+                    <div class="seller m-0">
+                        <div class="w-100 text d-flex">
+                            <p class="fw-bold">Günlük</p>
+                            <div>Trend məhsullar</div>
+                        </div>
+                        <div class="w-100 best_seller p-2 pt-0">
+                            <div class="row p-0">
+                                <div class="col-4 p-0 px-1">
+                                    <a href="az/product/1045/universal-180-firlanan-2-funksiyali-su-krani-filter-kran-funksional-metbex-vanna-otagi-krani.html">
+                                        <div class="img">
+                                            <img src="storage/photos/5/aaaamelek/plastikkran/712170%2b%2bQ0L._AC_SL1500_.jpg">
+                                            <i class="bade n1"></i>
+                                            <p>16.50 <i class="icon-azn">M</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4 p-0 px-1">
+                                    <a href="az/product/927/elektrikli-edviyyat-uyutme-masini-qehveceken-taxil-deyirmani-elektrikli-edviyyat-uyuducu.html">
+                                        <div class="img">
+                                            <img src="storage/photos/5/ABSPORTMALLAR/q%c9%99hv%c9%99%c3%a7%c9%99k%c9%99n/Sea48a34038b14120a699f3fe34736972c.jpg">
+                                            <i class="bade n2"></i>
+                                            <p>23.40 <i class="icon-azn">M</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4 p-0 px-1">
+                                    <a href="az/product/735/8-eded-vibrasiyaya-qarsi-rezin-pedler-surusmez-rezin-ayaqliq-paltaryuyan-masin-ucun-rezin-pedler.html">
+                                        <div class="img">
+                                            <img src="storage/photos/3/ABBMEISET/pads/Hf74fbfd237c44efdb5da738ac1eaf506D.jpg">
+                                            <i class="bade n3"></i>
+                                            <p>19.60 <i class="icon-azn">M</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 p-0 px-2">
+                    <div class="seller m-0">
+                        <div class="w-100 text d-flex">
+                            <p class="fw-bold">Həftəlik</p>
+                            <div>Trend məhsullar</div>
+                        </div>
+                        <div class="w-100 best_seller p-2 pt-0">
+                            <div class="row p-0">
+                                <div class="col-4 p-0 px-1">
+                                    <a href="az/product/907/moehair-3-u-1-de-ionik-sac-qurutma-feni-menfi-ion-texnologiyasi-ile-sac-duzlesdirici-daraq.html">
+                                        <div class="img">
+                                            <img src="storage/photos/5/ASPORTMALLAR/daraqlar/H55b023cc63ac41c4b0a7dd71d6ab8a55l.jpg">
+                                            <i class="bade n1"></i>
+                                            <p>33.40 <i class="icon-azn">M</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4 p-0 px-1">
+                                    <a href="az/product/1053/raf-2l-elektrikli-caydan-paslanmaz-polad-avtomatik-sonme-funksiyali-elektrik-caydani.html">
+                                        <div class="img">
+                                            <img src="storage/photos/3/1%201%201%20ME%c4%b0SETALET/rafcaydan/S8bd64c544c9b435784f0f7528e55216dc.jpg">
+                                            <i class="bade n2"></i>
+                                            <p>27.50 <i class="icon-azn">M</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4 p-0 px-1">
+                                    <a href="az/product/117/qantel-desti-30kq-stanq-2x-15kq-qantel-plastik-ortuklu-tenzimlenebilen.html">
+                                        <div class="img">
+                                            <img src="storage/photos/1/products/260412525225806eba2602e-37a0-479e-a7a0-fc0207ac12d8-880744cd088d82ad44895794fadc674a.jpg">
+                                            <i class="bade n3"></i>
+                                            <p>130.00 <i class="icon-azn">M</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 p-0 px-2">
+                    <div class="seller m-0">
+                        <div class="w-100 text d-flex">
+                            <p class="fw-bold">Aylıq</p>
+                            <div>Trend məhsullar</div>
+                        </div>
+                        <div class="w-100 best_seller p-2 pt-0">
+                            <div class="row p-0">
+                                <div class="col-4 p-0 px-1">
+                                    <a href="az/product/626/masaj-aparati-4-duymeli-tekmillesdirilmis-boyun-yogurucu-siatsu-masaji-ciyin-bel-beden-masaji-agri-kesici.html">
+                                        <div class="img">
+                                            <img src="storage/photos/3/1%20abebek/WhatsApp%20Image%202022-11-16%20at%2014.27.09.jpg">
+                                            <i class="bade n1"></i>
+                                            <p>45.50 <i class="icon-azn">M</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4 p-0 px-1">
+                                    <a href="az/product/761/nicer-dicer-metbex-rendesi-terevez-kesme-meyve-dilimleme-saxlama-qabli-dograyici-desti-meyve-kartof-soyucu-surtgec.html">
+                                        <div class="img">
+                                            <img src="storage/photos/3/ametbex%20aletleri/yeniagilligdograyici/71CuQ4AWn4L._SL1200_.jpg">
+                                            <i class="bade n2"></i>
+                                            <p>22.50 <i class="icon-azn">M</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-4 p-0 px-1">
+                                    <a href="az/product/397/pencere-silen-ikiterefli-maqnitli-pencere-temizleyicisi-suse-maqniti-3-30mm-tek-ve-ikiqat-suse-temizleme-aletleti.html">
+                                        <div class="img">
+                                            <img src="storage/photos/1/products/235253049529226h92a937a91f0f4ff8aef8fe423b88862c8.jpg">
+                                            <i class="bade n3"></i>
+                                            <p>58.00 <i class="icon-azn">M</i></p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section5">
+            <h4 class="section5_title">Mağazanın digər məhsulları</h4>
+            <div class="advice">
+                <div class="row" id="all-product-content">
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/701/balans-topu-balans-telimcisi-agir-yuk-bandi-ile-23-yarim-top-4-mm-qalinliqda-pvc-ceki-660-lbs-bonus-ayaq-pompasi-ile-yoqa-ve-fitness-mesqleri.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/3/1.1abs/balance/81rDtjQ0lJL._AC_SL1500_.jpg" />
+                                    <div class="stamp__container">
+                                    </div>
+                                </div>
+                                <p class="name" title="Balans Topu Balans Təlimçisi, Ağır Yük Bandı ilə 23 Yarım Top, 4 mm Qalınlıqda PVC, Çəki 660 lbs, Bonus Ayaq Pompası ilə Yoqa və Fitness Məşqləri">Balans Topu Balans Təlimçisi, Ağır Yük...</p>
+                                <div class="discount_percent">
+                                    <span>-10%</span>
+                                </div>
+                                <p class="price">
+                                    135 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        150 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">1443 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="701">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1329/enerjiye-qenaet-eden-sokany-elektrikli-gumus-hava-fritozu-istiye-davamli-air-fryer-6l-tutuna-malik-agilli-hava-fritozu.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/arboz/H321b5e84b2f94628b35d20d1403a2885Q.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Enerjiye Qənaət Edən Sokany Elektrikli Gümüş Hava Fritözü İstiyə Davamlı Air Fryer 6L Tutuna Malik Ağıllı Hava Fritözü">Enerjiye Qənaət Edən Sokany Elektrikli...</p>
+                                <div class="discount_percent">
+                                    <span>-8%</span>
+                                </div>
+                                <p class="price">
+                                    175 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        190 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">31 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1329">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1328/boyuk-tutumlu-sokany-elektrikli-air-fryer-10l-yapismayan-tava-ile-90-200-pesekar-multioven-hava-fritozu-1700w.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/airqara/3909094.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Böyük Tutumlu Sokany Elektrikli Air Fryer 10L Yapışmayan Tava İlə 90-200 ℃ Peşəkar Multioven Hava Fritözü  1700W">Böyük Tutumlu Sokany Elektrikli Air Fryer...</p>
+                                <div class="discount_percent">
+                                    <span>-6%</span>
+                                </div>
+                                <p class="price">
+                                    225 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        240 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">77 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1328">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1327/sokany-coxfunksiyali-reqemsal-hava-fritozu-8l-tutuma-sahib-cixarilan-yag-konteynerli-air-fryer-2400w-aerofritur.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/airsk/H5be3dd2608c844eeb1434574915ccdbfS.jpg_960x960.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Sokany Çoxfunksiyalı Rəqəmsal Hava Fritözü 8L Tutuma Sahib Çıxarılan Yağ Konteynerli Air Fryer 2400W Aerofritür">Sokany Çoxfunksiyalı Rəqəmsal Hava...</p>
+                                <div class="discount_percent">
+                                    <span>-15%</span>
+                                </div>
+                                <p class="price">
+                                    144 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        170 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">239 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1327">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1326/ustun-keyfiyyetli-sokany-hava-fritozu-5l-tutuma-sahib-coxfunksiyali-air-fryer-1500w-gucunde-tenzimlenen-termostat-nezareti.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/airskqara/U885dd3369cc34a35be568b3bcf7506dbb.jpg_960x960.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Üstün Keyfiyyətli Sokany Hava Fritözü 5l Tutuma Sahib Çoxfunksiyalı Air Fryer 1500W Gücündə Tənzimlənən Termostat Nəzarəti">Üstün Keyfiyyətli Sokany Hava Fritözü...</p>
+                                <div class="discount_percent">
+                                    <span>-7%</span>
+                                </div>
+                                <p class="price">
+                                    149 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        160 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">95 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1326">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1325/sokany-reqemsal-12l-tutumlu-hava-fritoz-yeni-dizaynda-1800w-sensor-ekranli-menyu-ve-yagsiz-bisirme-ozellikli-air-fryer.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/airboz/k.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Sokany Rəqəmsal 12l Tutumlu Hava Fritöz Yeni Dizaynda 1800W Sensor Ekranlı Menyu Və Yağsız Bişirmə Özəllikli Air Fryer">Sokany Rəqəmsal 12l Tutumlu Hava Fritöz...</p>
+                                <div class="discount_percent">
+                                    <span>-10%</span>
+                                </div>
+                                <p class="price">
+                                    225 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        250 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">86 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1325">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1324/yeni-3-u-1-de-funksional-crown-ventilyator-60w-stend-ventilyator-5-ferli-serinkes-3-suretli.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/azer2023/elektromika/ventlyator004crovn/H31f7c78cee194a69965581d0fdc0fabfR.jpg_960x960.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="new-product">YENİ</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Yeni 3-ü 1-də Funksional Crown Ventilyator 60W Stend Ventilyator 5 Fərli Sərinkeş 3 Sürətli">Yeni 3-ü 1-də Funksional Crown Ventilyator...</p>
+                                <div class="discount_percent">
+                                    <span>-24%</span>
+                                </div>
+                                <p class="price">
+                                    49.5 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        65 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">156 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1324">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/76/agirliq-qaldirma-kemeri-idman-zali-kemeri-fitness-ceki-kemeri-genis-arxa-destekli-agirliq-qaldirma-kemeri-fitnes-agirliq-qaldirma-kemeri.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/1/products/279902639529586899b901e4cdfee8ea0c5384aec4b747643452d37-1024-1024.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Ağırlıq qaldırma kəməri İdman zalı kəməri Fitness çəki kəməri Geniş arxa dəstəkli ağırlıq qaldırma kəməri Fitnes ağırlıq qaldırma kəməri">Ağırlıq qaldırma kəməri İdman zalı...</p>
+                                <div class="discount_percent">
+                                    <span>-8%</span>
+                                </div>
+                                <p class="price">
+                                    23 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        25 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">1930 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="76">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1322/3-u-1-de-funksional-crown-18-duymluk-ventilyator-dayaniqli-ayaqli-stend-serinkes-3-suretli.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/azer2023/elektromika/ventelyator3crown/H6f119d1b080f49b3924a0a24a253022ex.jpg_960x960.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="new-product">YENİ</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="3-ü 1-də Funksional Crown 18 Düymlük Ventilyator Dayanıqlı Ayaqlı Stend Sərinkeş 3 Sürətli">3-ü 1-də Funksional Crown 18 Düymlük...</p>
+                                <div class="discount_percent">
+                                    <span>-19%</span>
+                                </div>
+                                <p class="price">
+                                    44.5 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        55 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">965 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1322">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1321/boyuk-tutumlu-sokany-reqemsal-air-fryer-8l-yuksek-guce-mexsus-reqemsal-idareetmeli-led-displey-hava-fritozu-1800w.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/air/Hd2e0d6cb4c254d55a6f57a3c56d68806k.jpg_960x960.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Böyük Tutumlu Sokany Rəqəmsal Air Fryer 8L Yüksək Gücə Məxsus Rəqəmsal İdarəetməli LED Displey Hava Fritözü 1800W">Böyük Tutumlu Sokany Rəqəmsal Air Fryer...</p>
+                                <div class="discount_percent">
+                                    <span>-8%</span>
+                                </div>
+                                <p class="price">
+                                    165 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        180 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">625 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1321">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1320/yuksek-keyfiyyetli-sokany-elektrikli-reqemsal-hava-fritozu-1800w-gucunde-pesekar-ari-fritoz-mexanic-timer-8l.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/airfrayer/Hc9de96902b3345a883c7b69289826c13x.jpg_960x960.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Yüksək Keyfiyyətli Sokany Elektrikli Rəqəmsal Hava Fritözü 1800W Gücündə Peşəkar Ari Fritöz Mexanic Timer 8L">Yüksək Keyfiyyətli Sokany Elektrikli...</p>
+                                <div class="discount_percent">
+                                    <span>-13%</span>
+                                </div>
+                                <p class="price">
+                                    175 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        200 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">141 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1320">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/379/2-eded-nuoten-professional-bicaq-itileyen-metbex-aksesuari-metbex-ucun-bicaqceken-bicaq-itileyici.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/1/products/221022891530018affuteur-de-couteaux-26.jpg" />
+                                    <div class="stamp__container">
+                                    </div>
+                                </div>
+                                <p class="name" title="2 Ədəd NUOTEN Professional Bıçaq İtiləyən Mətbəx Aksesuarı Mətbəx Üçün Bıçaqçəkən Bıçaq İtiləyici">2 Ədəd NUOTEN Professional Bıçaq...</p>
+                                <div class="discount_percent">
+                                </div>
+                                <p class="price">
+                                    14.5 <i class="icon-azn">M</i>
+                                </p>
+                                <p class="wiew">1785 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="379">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1319/coxfunksiyali-1-10pcs-tekrar-doldurulan-suya-davamli-led-fener-4-isiqlandirma-rejimli-qarmaqli-fles-cib-klipi.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/i%c5%9f%c4%b1q/S0b4e5158e1954abbade42edc5a0feb08i.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Çoxfunksiyalı 1-10pcs Təkrar Doldurulan Suya Davamlı LED Fənər 4 İşıqlandırma Rejimli Qarmaqlı Fləş Cib Klipi">Çoxfunksiyalı 1-10pcs Təkrar Doldurulan...</p>
+                                <div class="discount_percent">
+                                </div>
+                                <p class="price">
+                                    15.6 <i class="icon-azn">M</i>
+                                </p>
+                                <p class="wiew">116 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1319">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1087/8-basliqli-masaj-aparati-fascia-gun-yuksek-tezlikli-elektrikli-masaj-tabancasi-32-seviyyeli-rahatlasdirici-agri-kesici-masajor.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/azer2023/aparatlar/masajor8basliq/ded6a49de96543f49b572bdf65152de220b7950f_originall.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="new-product">YENİ</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="8 Başlıqlı Masaj Aparatı Fascia Gun Yüksək Tezlikli Elektrikli Masaj Tabancası 32 Səviyyəli Rahatlaşdırıcı Ağrı Kəsici Masajor">8 Başlıqlı Masaj Aparatı Fascia Gun...</p>
+                                <div class="discount_percent">
+                                    <span>-18%</span>
+                                </div>
+                                <p class="price">
+                                    49.5 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        60 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">1900 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1087">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1318/boyukler-ucun-bel-duzlesdirici-korset-qamet-duzeldici-destek-kemeri-onurga-duzlesdirici-yarim-bel-korseti.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/korsetc/H33fcc51aabe647c49ef5b629aef344a8n.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Böyüklər Üçün Bel Düzləşdirici Korset Qamət Düzəldici Dəstək Kəməri Onurğa Düzləşdirici Yarım Bel Korseti">Böyüklər Üçün Bel Düzləşdirici...</p>
+                                <div class="discount_percent">
+                                </div>
+                                <p class="price">
+                                    13.5 <i class="icon-azn">M</i>
+                                </p>
+                                <p class="wiew">113 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1318">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1317/yeni-raf-elketikli-metbex-blenderi-600w-usaq-qidasi-et-sogan-terevez-ucun-uygun-polad-metbet-dograyici-2l.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/do%c4%9frayiciya%c5%9f%c4%b1l/Hdcd6f3d38b0543b59f00e9e991f687efd.jpg_960x960.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Yeni RAF Elketikli Mətbəx Blenderi 600W Uşaq Qidası Ət Soğan Tərəvəz Üçün Uyğun Polad Mətbət Doğrayıcı 2L">Yeni RAF Elketikli Mətbəx Blenderi 600W...</p>
+                                <div class="discount_percent">
+                                </div>
+                                <p class="price">
+                                    32.4 <i class="icon-azn">M</i>
+                                </p>
+                                <p class="wiew">101 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1317">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1153/airs-pods-simsiz-bluetooth-qulaqliq-tws-tws-pro4-bluetooth-50-stereo-android-ios-ucun-uygun-oyun-nausniki.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/Qulaql%c4%b1q/Pro-4-kablosuz-Bluetooth-kulakl-k-TWS-kulakl-klar-HiFi-m-zik-kulakl-klar-spor-oyun.jpg_640x640.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="new-product">YENİ</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Airs Pods Simsiz Bluetooth Qulaqlıq TWS TWS Pro4 Bluetooth 5.0 Stereo Android IOS Üçün Uyğun Oyun Nauşniki">Airs Pods Simsiz Bluetooth Qulaqlıq TWS TWS...</p>
+                                <div class="discount_percent">
+                                </div>
+                                <p class="price">
+                                    35 <i class="icon-azn">M</i>
+                                </p>
+                                <p class="wiew">720 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1153">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/513/portativ-mebel-qaldiran-alet-4-tekerli-yastiqciqli-keyfiyyetli-metalmebel-dasiyan.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/3/danqrat/H717663b622124736bbe57221def46cbaA.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Portativ Mebel Qaldıran Alət 4 Təkərli Yastiqciqli Keyfiyyətli MetalMebel Daşıyan">Portativ Mebel Qaldıran Alət 4 Təkərli...</p>
+                                <div class="discount_percent">
+                                    <span>-10%</span>
+                                </div>
+                                <p class="price">
+                                    22 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        24.5 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">8444 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="513">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1316/dsp-elektrikli-avtomatik-hava-fritozu-1500w-guclu-dairevi-vizual-isti-qizardici-air-fryer-55l-tutuma-sahib-kvadrat-formali-fritoz.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/Frit%5bzqararoz/He66c32d51f3342e28a51d73f67d35b1ac.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="DSP Elektrikli Avtomatik Hava Fritözü 1500W Güclü Dairəvi Vizual İsti Qızardıcı Air Fryer 5.5L Tutuma Sahib Kvadrat Formalı Fritöz">DSP Elektrikli Avtomatik Hava Fritözü...</p>
+                                <div class="discount_percent">
+                                    <span>-3%</span>
+                                </div>
+                                <p class="price">
+                                    195 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        200 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">195 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1316">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1315/yeni-nesil-dsp-coxfunkisyali-hava-fritozu-1350w-6-proqrama-sahib-qazan-formali-agilli-qril-air-fryer-55l-80-200c.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/qazanfrt/O1CN01XCReIh215Mi4gxy3n_%21%212200737686933-0-cib.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Yeni Nəsil DSP Çoxfunkisyalı Hava Fritözü 1350W 6 Proqrama Sahib Qazan Formalı Ağıllı Qril Air Fryer 5.5L 80-200°C">Yeni Nəsil DSP Çoxfunkisyalı Hava...</p>
+                                <div class="discount_percent">
+                                    <span>-13%</span>
+                                </div>
+                                <p class="price">
+                                    175 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        200 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">194 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1315">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1314/dsp-elektrikli-air-fryer-1800w-yapismaz-yagsiz-pisirme-ozellikli-hava-fritozu-55l-avtomatik-termostat-nezareti-220-240v.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/Frit%c3%b6zzs/H5c204f4a14764e04a6438e2fd7f36b39B.jpg_960x960.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="DSP Elektrikli Air Fryer 1800W Yapışmaz Yağsız Pişirmə Özəllikli Hava Fritözü 5.5L Avtomatik Termostat Nəzarəti 220-240V">DSP Elektrikli Air Fryer 1800W Yapışmaz...</p>
+                                <div class="discount_percent">
+                                </div>
+                                <p class="price">
+                                    220 <i class="icon-azn">M</i>
+                                </p>
+                                <p class="wiew">181 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1314">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/20/yeni-speedo-aquapulse-max-2-mirror-qara-uzguculuk-eynekleri.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/1/products/311542249030504img-7077.png" />
+                                    <div class="stamp__container">
+                                        <span class="new-product">YENİ</span> <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Yeni Speedo Aquapulse Max 2 Mirror Qara Üzgüçülük eynəkləri">Yeni Speedo Aquapulse Max 2 Mirror Qara...</p>
+                                <div class="discount_percent">
+                                    <span>-10%</span>
+                                </div>
+                                <p class="price">
+                                    28.8 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        32 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">1890 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="20">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1312/yeni-raf-68l-tutuma-malik-gumus-air-fryer-1600w-muasir-dizayna-sahib-coxfunksiyali-hava-fritozu-42kq.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/frit%5bzboz/w.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="Yeni RAF 6.8L Tutuma Malik Gümüş Air Fryer 1600W Müasir Dizayna Sahib Çoxfunksiyalı Hava Fritözü 4.2Kq">Yeni RAF 6.8L Tutuma Malik Gümüş Air...</p>
+                                <div class="discount_percent">
+                                    <span>-16%</span>
+                                </div>
+                                <p class="price">
+                                    184 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        220 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">242 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1312">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 px-1">
+                        <div class="adivice_title">
+                            <a href="az/product/1311/8-i-1-arada-raf-12-letrlik-professional-hava-fritozu-2800w-gucunde-iki-tavali-pesekar-yapismaz-air-fryer-6l6l-qizardilmis-toyuq-cipsleri-bisiren.html" target="_blank">
+                                <div class="img img-container" style="position: relative;">
+                                    <img class="w-100" src="storage/photos/melek2023/frit%c3%b6z2li/Sf9cc68b1398543ee80678e6f1730cd70f.jpg" />
+                                    <div class="stamp__container">
+                                        <span class="delivery-product">Pulsuz çatdırılma</span>
+                                    </div>
+                                </div>
+                                <p class="name" title="8-i 1 Arada RAF 12 Letrlik Professional Hava Fritözü 2800W Gücündə İki Tavalı Peşəkar Yapışmaz Air Fryer 6L+6L Qızardılmış Toyuq Çipsləri Bişirən">8-i 1 Arada RAF 12 Letrlik Professional Hava...</p>
+                                <div class="discount_percent">
+                                    <span>-22%</span>
+                                </div>
+                                <p class="price">
+                                    235 <i class="icon-azn">M</i>
+                                    <del style="text-decoration: line-through; opacity: .5;">
+                                        300 <i class="icon-azn">M</i>
+                                    </del>
+                                </p>
+                                <p class="wiew">270 baxılıb</p>
+                            </a>
+                            <div class="add text-end">
+                                <div class="row align-items-center m-0 text-center">
+                                    <div class="col-7"></div>
+                                    <form action="https://www.arizon.az/add-to-cart" method="post" class="col-5 p-0 add-to-cart d-flex justify-content-end">
+                                        <input type="hidden" name="_token" value="M85N5au8EFw5fIHoVDq1Xt78R8PfgeUVuUse8pdt"> <input type="hidden" name="product_id" value="1311">
+                                        <button type="submit" class="btn"><img src="frontend/image/sebet.png" /></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   
+                </div>
+           
+            <div class="more text-center mt-5 next-btn" data-page="2">
+                <button>Davamı</button>
+            </div>
+        </section>     }
+    </div>
+</main>
